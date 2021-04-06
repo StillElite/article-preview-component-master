@@ -1,0 +1,164 @@
+ body{
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    color: hsl(237, 12%, 33%);
+    font-size: 13px;
+}
+
+.main {
+    background: hsl(210, 46%, 95%);
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    display: table-cell;
+    vertical-align: middle; 
+}
+
+.article {
+    background: white;
+    margin: auto;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+    overflow: hidden;
+    max-width: 680px;
+}  
+
+.article-text p {
+    line-height: 1.6;
+}
+
+.article-pic {
+    background-image: url(images/drawers.jpg);
+    background-size: 123%;
+    background-repeat: no-repeat;
+    width: 40%;
+    float: left;
+    margin: 0;
+    height: 250px;
+} 
+
+.article-pic img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.article-info {
+    width: 60%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.article-text {
+    width: 336px;
+}
+
+.article-text h1 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-info{
+    display: flex;
+}
+
+.author-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.author-text p{
+    margin: 0;
+    padding-left: 15px;
+}
+.author-text p:nth-child(1){
+    font-weight: 700;
+}
+
+.share {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share img {
+    height: 15px;
+    width: 15px;
+    text-align: center;
+}
+
+.panel {
+    position: absolute;
+    background: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 0 20px;
+    color: hsl(212, 23%, 69%);
+    /* height: 0;
+    overflow: hidden; 
+    line-height: 1.5;
+    transition: all 0.5s ease-in-out;
+    padding-right: 15px; */
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 5px;
+    margin: 7px;
+
+
+}
+
+li{
+    display: inline-block;
+    padding: 10px;
+}
+
+/* .panel.show {
+    display: block !important;
+    height: 75px;
+    transition: all 0.5s ease-in-out;
+    padding-bottom: 10px;
+}  */
+
+
+/* Media Queries
+--------------------------------- */
+
+@media screen and (max-width: 991px){
+    .faq {
+        margin: 0 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .article{
+        width: 375px;
+    }
+
+     .article-pic,
+    .article-info {
+        width: 100%;
+    }
+}
+        
