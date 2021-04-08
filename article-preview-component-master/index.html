@@ -12,68 +12,63 @@
 
   <title>Article preview component</title>
 </head>
-
 <body>
 
   <div class="main">
     <div class="wrapper">
       <div class="article">
-        <div class="article-pic">
-          <!-- <img src="images/drawers.jpg" alt="drawers"> -->
-        </div>
+        <div class="article-pic"></div>
 
         <div class="article-info">
-          <div class="article-text">
-            <h1>Shift the overall look and feel by adding these wonderful
-              touches to furniture in your home
-            </h1>
-            <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
-              I’ve got some simple tips to help you make any room feel complete.
-            </p>
-        
-            <div class="author">
-              <div class="author-info">
-                <img class="author-pic" src="images/avatar-michelle.jpg" alt="Michelle Appleton">
-                <div class="author-text">
-                  <p>Michelle Appleton</p>
-                  <p>28 Jun 2020</p>
+            <div class="article-text">
+                <h1>Shift the overall look and feel by adding these wonderful
+                  touches to furniture in your home
+                </h1>
+                <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
+                </p>
+                <div class="author">
+                    <div class="author-info">
+                        <img class="author-pic" src="images/avatar-michelle.jpg" alt="Michelle Appleton">
+                        <div class="author-text">
+                            <p>Michelle Appleton</p>
+                            <p>28 Jun 2020</p>
+                        </div>
+                    </div>
+                    <div onclick="myFunction()" class="share" id="share">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+                    </div>
                 </div>
-                <div class="panel2">
-                  <p>SHARE</p>
-                  <ul>
-                  
-                    <li><img src="images/icon-facebook.svg" alt="facebook" /></li> 
-                    <li><img src="images/icon-twitter.svg" alt="facebook" /></li>
-                    <li><img src="images/icon-pinterest.svg" alt="facebook" /></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="share">
-                <img src="images/icon-share.svg" alt="share" />
-                <!-- <div class="panel">
-                  <p>SHARE</p>
-                  <ul>
-                  
-                    <li><img src="images/icon-facebook.svg" alt="facebook" /></li>
-                    <li><img src="images/icon-twitter.svg" alt="facebook" /></li>
-                    <li><img src="images/icon-pinterest.svg" alt="facebook" /></li>
-                  </ul>
-                </div> -->
-              </div>
             </div>
-            
-      
-    
-          </div>
+
+            <div class="panel" id="panel">
+                <p>SHARE</p>
+                <ul>
+                  <li><a href="https://www.facebook.com/" target="_blank"><img src="images/icon-facebook.svg" alt="facebook" /></a></li>
+                  <li><a href="https://twitter.com/?lang=en" target="_blank"><img src="images/icon-twitter.svg" alt="twitter" /></a></li>
+                  <li><a href="https://www.pinterest.com/" target="_blank"><img src="images/icon-pinterest.svg" alt="pintrest" /></a></li>
+                </ul>
+            </div>
         </div>
+
       </div>
     </div>
   </div>
 
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Ebony Williams</a>.
-  </div> -->
-</body>
+  <script>
+    function myFunction() {
+      let share = document.getElementById("share");
+      let panel = document.getElementById("panel");
+      if (window.screen.width <= 700) {
+        share.classList.toggle("mobile");
+        panel.classList.toggle("show"); 
+        console.log('1')  
+      } else {
+        panel.classList.toggle("show");
+        console.log('2');  
+        console.log(window.screen.width);  
+      }
+    }
+  </script>
 
+</body>
 </html>
