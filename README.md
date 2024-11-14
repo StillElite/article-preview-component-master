@@ -21,6 +21,6 @@ Your users should be able to:
 - HTML5 markup
 - CSS custom properties
 - Flexbox
-- Javascript
+- JavaScript
 
 View: https://stillelite.github.io/article-preview-component-master/
